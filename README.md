@@ -48,7 +48,6 @@ For more information: [data-fields of Open Food Facts](https://static.openfoodfa
 
   + Clean code, write comments as needed
 
-
 # Questions for TAa
 
 + Is using just the Open Food Facts dataset enough to justify that a (i.e. vegan) person would be able to survive in certain countries? Or would it make more sense if we included the Cooking Recipe's dataset so that we can see the proportion of meals that person can make in the different countries?

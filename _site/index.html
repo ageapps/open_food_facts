@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.1.1
+    Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+    
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Open Food Facts Data Analysis | Open Food Facts</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Open Food Facts Data Analysis" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A tale about food workdwide" />
+<meta property="og:description" content="A tale about food workdwide" />
+<link rel="canonical" href="http://localhost:4000/open_food_facts/" />
+<meta property="og:url" content="http://localhost:4000/open_food_facts/" />
+<meta property="og:site_name" content="Open Food Facts" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"name":"Open Food Facts","description":"A tale about food workdwide","@type":"WebSite","url":"http://localhost:4000/open_food_facts/","headline":"Open Food Facts Data Analysis","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/open_food_facts/assets/css/main.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Lora:400,400i,700,700i">
+  <link rel="alternate" type="application/atom+xml" title="Open Food Facts" href="/open_food_facts/atom.xml">
+<!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+
+  <body class="layout--home  open-food-facts-data-analysis">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+    <header class="masthead">
+  <div class="wrap">
+    
+    
+      <h1 class="site-title animated fadeIn"><a href="/open_food_facts/">Open Food Facts</a></h1>
+      <p class="site-description animated fadeIn" itemprop="description">A tale about food workdwide</p>
+    
+  </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article>
+    
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title">Open Food Facts Data Analysis</h1>
+        
+      </header>
+      <div class="page-content">
+        <h1 id="open-food-facts-data-analysis">Open Food Facts Data Analysis</h1>
+
+<p>Web Page <a href="https://ageapps.github.io/open_food_facts/">A tale about food workdwide</a></p>
+
+<h1 id="abstract">Abstract</h1>
+
+<p>According to the Food allergy Research &amp; Education, there have been over 170 reports of different foods causing allergies. In America, there is approximately 15 million people who have food allergies, and this number is rising. Between 1997 to 2011, the number of food allergies in children increased by 50%. More specifically, from 1997 to 2008, the presence of peanut/tree nut allergies have tripled in the United States. With this increase in allergies, we wanted to analyze how different countries in the world support the people with different kinds of intolerances to food (i.e. allergies) as well as those who require a specific diet (i.e. diabetes, high cholesterol, vegan, halal). From our analysis, we want to show how easy/hard it would be to support the different diets around the world. This way, when people are travelling, they can be prepared for the limited number of foods they can eat. For this project, we will be using the Open Food Facts Database.</p>
+
+<h1 id="research-questions">Research questions</h1>
+
+<ul>
+  <li>
+    <p>How closely correlated (similar) are neighbouring countries’ food?</p>
+  </li>
+  <li>
+    <p>Is the support for a dietary restriction similar in neighbouring countries?</p>
+  </li>
+  <li>
+    <p>How can we display the support for different types of dietary restriction on a map?</p>
+  </li>
+  <li>
+    <p>Also, what if we want to see the support for two or more dietary restrictions?</p>
+  </li>
+</ul>
+
+<h1 id="dataset">Dataset</h1>
+
+<p>We’re going to use the Open Food Facts data set (https://world.openfoodfacts.org/data) It is an open source database, which provides nutrition facts for food products sold in each country, and all nutrition information was available in English. This can be very helpful to foreigners to understand food in this country. Currently, this database contains more than 90,000 records, all of the contents are contributed by volunteers, and its entire database can be downloaded for free.</p>
+
+<p>The dataset has four main fields related to general information such as the barcode of the product, the contributor who first added the product, the url of the product and of course the name of the product. Other field is called tags, here we found information related to the packaging or  brands of the products. One of the main fields we’re going to analyze is the ingredients one. Another interesting field is nutrition facts correspond to the amount of a nutriment (in g, or kJ for energy) for 100g or 100 ml of product. Finally, in the misc. Data field  we have extra information such as image of the product, number of food additives or ingredients from palm  oil, carbon footprint (indicated on some products) and nutrition score defined by the UK Food Standards Administration (FSA).</p>
+
+<p>For more information: <a href="https://static.openfoodfacts.org/data/data-fields.txt">data-fields of Open Food Facts</a></p>
+
+<h1 id="a-list-of-internal-milestones-up-until-project-milestone-2">A list of internal milestones up until project milestone 2</h1>
+
+<ul>
+  <li>
+    <p>Setup: Done by November 8</p>
+
+    <ul>
+      <li>
+        <p>Understand how the data is stored on the ADA cluster.</p>
+      </li>
+      <li>
+        <p>Look at the data and brainstorm ways to clean/process the data.</p>
+      </li>
+      <li>
+        <p>Brainstorm how to display the data.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Clean &amp; Start Processing: Done by November 15</p>
+
+    <ul>
+      <li>
+        <p>Clean the data from Open Food Facts</p>
+      </li>
+      <li>
+        <p>Start finding relationships between the different types of food in each country perhaps present them in a map.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Finish Processing &amp; Analyzing: Done by November 22</p>
+
+    <ul>
+      <li>
+        <p>Finish all graphs/maps needed</p>
+      </li>
+      <li>
+        <p>Write the conclusions from the graphs</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Clean up: Done by November 25</p>
+
+    <ul>
+      <li>Clean code, write comments as needed</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="questions-for-taa">Questions for TAa</h1>
+
+<ul>
+  <li>
+    <p>Is using just the Open Food Facts dataset enough to justify that a (i.e. vegan) person would be able to survive in certain countries? Or would it make more sense if we included the Cooking Recipe’s dataset so that we can see the proportion of meals that person can make in the different countries?</p>
+  </li>
+  <li>
+    <p>Do we need to create our own database that join each food allergie with the allergen that provokes it?</p>
+  </li>
+</ul>
+
+<h1 id="a-list-of-internal-milestones-up-until-project-milestone-3">A list of internal milestones up until project milestone 3</h1>
+
+<ul>
+  <li>
+    <p>Setup: Done by Dec 6</p>
+
+    <ul>
+      <li>
+        <p>Create the map visualizations that depict the number/percentage of food available for each type of dietary restriction</p>
+      </li>
+      <li>
+        <p>Analyze the correlation of foods available between neighbouring countries.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Writing the Report: Done by Dec 13</p>
+
+    <ul>
+      <li>
+        <p>Determine which type of report we want to do (i.e. Data story or traditional report)</p>
+      </li>
+      <li>
+        <p>Explain the algorithms we used when cleaning our data and displaying our graphs</p>
+      </li>
+      <li>
+        <p>Explain our results of what our results (data) shows and what it means</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+<div class="entries-list"></div>
+
+
+        
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="social-icons"><a class="social-icon" href="https://ageapps.github.io/open_food_facts/"><i class="fab fa-github fa-2x" title="GitHub"></i></a></div><div class="copyright">
+    
+      <p>&copy; 2018 Open Food Facts. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/mmistakes/so-simple-theme" rel="nofollow">So Simple</a>.</p>
+    
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/open_food_facts/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+
+
+  </body>
+
+</html>

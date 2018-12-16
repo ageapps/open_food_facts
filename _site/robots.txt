@@ -1,0 +1,1 @@
+Sitemap: http://localhost:4000/open_food_facts/sitemap.xml
